@@ -1,0 +1,104 @@
+body {
+  background: #c3cfe2;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px auto;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  max-width: 900px;
+  margin: auto;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+}
+
+.container__card {
+  aspect-ratio: 1 / 1;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background: url("../images/Martijn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container__card:hover {
+  background-size: 120%;
+}
+
+.container__card:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  background: #252B3E;
+  z-index: 99;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+}
+
+.container__card:hover:after, .container__card:hover .container__card--button {
+  opacity: 1;
+}
+
+.container__card--button {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  height: auto;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0;
+  z-index: 999;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    max-width: 100%;
+    margin: 20px;
+  }
+  .container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,82 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #c3cfe2;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  overflow: hidden;
+  margin-right: -240px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.container__social-media {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 20px 24px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 0px 0px 0 180px;
+  min-width: 300px;
+}
+
+.container__social-media.blog {
+  background-color: #e17b77;
+}
+
+.container__social-media.facebook {
+  background-color: #3b5998;
+}
+
+.container__social-media.twitter {
+  background-color: #00aced;
+}
+
+.container__social-media.github {
+  background-color: #333;
+}
+
+.container__social-media.linkedin {
+  background-color: #007bb6;
+}
+
+.container__social-media--link {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: -17px 0px 0px 25px;
+  font-weight: 400;
+}
+
+.container__social-media::before {
+  color: white;
+}
+
+.blog:hover, .facebook:hover, .twitter:hover, .github:hover, .linkedin:hover {
+  margin: 0 0 0 0;
+}
+/*# sourceMappingURL=styles.css.map */

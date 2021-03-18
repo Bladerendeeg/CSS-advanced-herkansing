@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,500,700");
+/* Global */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #c3cfe2;
+  color: #616161;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.card {
+  border-radius: 25px;
+  max-width: 425px;
+  -webkit-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  text-align: center;
+}
+
+.card__text {
+  padding: 40px;
+}
+
+.card__text--p {
+  text-align: left;
+  line-height: 2em;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+
+.card img {
+  width: 125px;
+  border-radius: 200px;
+  border: 6px solid white;
+  margin-top: -40px;
+  margin-bottom: -60px;
+}
+
+.card__contact {
+  background: #686de0;
+  border-radius: 0 0 25px 25px;
+  padding: 60px 0 30px 0;
+}
+
+.card h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.card h2 {
+  font-weight: 700;
+  color: #B0B3EA;
+  font-size: 16px;
+}
+/*# sourceMappingURL=styles.css.map */

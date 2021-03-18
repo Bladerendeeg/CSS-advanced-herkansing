@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #c3cfe2;
+    margin:0;
+    display:grid;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container {
+    overflow: hidden;
+    margin-right: -240px;
+    display: grid;
+    grid-template-columns: 1fr;
+    &__social-media {
+        display: grid;
+        justify-content: flex-end;
+        align-items: center;
+        grid-template-columns: 1fr;
+        padding: 20px 24px;
+        transition:0.5s;
+        margin: 0px 0px 0 180px;
+        min-width: 300px;
+        &.blog {
+            background-color: #e17b77;
+        }
+        &.facebook {
+            background-color: #3b5998;
+        }
+        &.twitter {
+            background-color: #00aced;
+        }
+        &.github {
+            background-color: #333;
+        }
+        &.linkedin {
+            background-color: #007bb6;
+        }
+        &--link {
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: -17px 0px 0px 25px;
+            font-weight: 400;
+        }
+        &::before {
+            color:white;
+        }
+}
+}
+.blog:hover, .facebook:hover, .twitter:hover, .github:hover, .linkedin:hover {
+    margin:0 0 0 0;
+}
